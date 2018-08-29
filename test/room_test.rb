@@ -1,7 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/room'
-require 'pry'
 
 class RoomTest < Minitest::Test
 
@@ -18,6 +17,6 @@ class RoomTest < Minitest::Test
   def test_area_calculates_correctly
     room = Room.new(:bedroom, 10, 13)
     assert_equal 130, room.area
-  end 
+  end
 
 end

@@ -2,7 +2,6 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/room'
 require './lib/house'
-require 'pry'
 
 class HouseTest < Minitest::Test
 
@@ -132,7 +131,7 @@ class HouseTest < Minitest::Test
 
     expected = [room_1, room_2, room_3, room_4]
     actual = house.rooms_sorted_by_area
-    
+
     assert_equal expected, actual
   end
 
